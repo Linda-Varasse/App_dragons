@@ -4,7 +4,8 @@
 
 body {
   width: 100%;
-  background-image: url("img_dragons/background-home.jpg");
+  background-image: url("../../img_dragons/background-dragon.jpg");
+  background-size: contain;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -14,8 +15,8 @@ h1 {
   text-shadow: 11px 5px 8px #898989;
 }
 /********************************************************************
-************************ HEADER ***********************************
-********************************************************************/
+  ************************ HEADER ***********************************
+  ********************************************************************/
 header {
   display: flex;
   justify-content: space-around;
@@ -29,8 +30,8 @@ header img {
   width: 10%;
 }
 /********************************************************************
-************************ NAV ****************************************
-********************************************************************/
+  ************************ NAV ****************************************
+  ********************************************************************/
 .hidden {
   display: none;
 }
@@ -71,77 +72,41 @@ header img {
   justify-content: space-around;
   align-items: center;
 }
+
 /********************************************************************
-************************ CHOIX ****************************************
-********************************************************************/
-.container h2 {
-  padding: 1em;
-}
-.select-menu {
-  display: flex;
-  justify-content: space-around;
-  font-size: 1.2rem;
-}
-/********************************************************************
-************************ SECTION CONTAINER **************************
-********************************************************************/
+  ************************ SECTION CONTAINER **************************
+  ********************************************************************/
 
 .container {
   background-color: rgba(217, 217, 217, 0.8);
   width: 70%;
   margin-left: 20%;
   height: auto;
+  position: relative;
   padding-bottom: 2em;
 }
-.dragons-description {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.dragon-picture {
+  width: 70%;
 }
-.dragons-description .dragon-presentation {
-  width: 40%;
-  margin: 2em 0 2em 4em;
-}
-.dragons-description .dragon-presentation img {
+.badge-feu {
+  position: absolute;
+  top: 0;
+  right: 0;
   width: 50%;
 }
-.name-dragon {
-  display: flex;
-  margin-bottom: 2em;
-}
-.dragons-description button {
-  padding: 1em;
-  border: 0;
-  border-radius: 20px;
-  background-color: #101b40;
-}
-.dragons-description button a {
-  color: #fff;
-  text-decoration: none;
-}
-/********************************************************************
-************************ NAV PAGE **************************
-********************************************************************/
-.pages {
-  display: flex;
-  justify-content: center;
-}
 
-.pagination {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.description {
+  width: 80%;
+  margin: auto;
+}
+.description img {
+  width: 15%;
+}
+.power,
+.armure {
   display: flex;
 }
 
-.pagination li {
-  margin: 0 1px;
-}
-.pagination li a {
-  color: black;
-  padding: 0 1em;
-}
 /********************************************************************
 ************************ RESPONSIVE TABLETTE **************************
 ********************************************************************/
@@ -193,23 +158,6 @@ header img {
     width: 90%;
     margin: auto;
   }
-  .dragons-description .dragon-presentation {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: 2em 0;
-  }
-  .dragon-presentation .name-dragon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .dragons-description .dragon-presentation button {
-    width: auto;
-  }
 }
 /********************************************************************
 ************************ RESPONSIVE MOBILE **************************
@@ -217,18 +165,5 @@ header img {
 @media screen and (max-width: 500px) {
   .hidden {
     font-size: 1em;
-  }
-  .select-menu {
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-left: 10%;
-  }
-  .type-choice,
-  .name-choice,
-  .checkbox {
-    margin-top: 1em;
   }
 }

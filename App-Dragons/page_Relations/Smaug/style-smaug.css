@@ -1,0 +1,169 @@
+/********************************************************************
+************************ GENERAL ***********************************
+********************************************************************/
+
+body {
+  width: 100%;
+  background-image: url("../../img_dragons/background-dragon.jpg");
+  background-size: contain;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+h1 {
+  font-size: 3.75em;
+  text-shadow: 11px 5px 8px #898989;
+}
+/********************************************************************
+    ************************ HEADER ***********************************
+    ********************************************************************/
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(16, 27, 64, 0.95);
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+  color: #fff;
+}
+header img {
+  width: 10%;
+}
+/********************************************************************
+    ************************ NAV ****************************************
+    ********************************************************************/
+.hidden {
+  display: none;
+}
+.menu-nav {
+  position: fixed;
+  left: 0px;
+  top: 140px;
+  width: 20%;
+}
+.menu-nav ul {
+  padding: 0;
+}
+.menu-nav ul li {
+  list-style: none;
+}
+.menu-nav ul li a,
+.menu-nav ul li a h2 {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.menu-nav img {
+  width: 100%;
+}
+.menu-nav .dragons {
+  background-color: #898989;
+  padding: 0 0 1em 0;
+  width: 80%;
+  margin: 1em 0 0.5em 0;
+  height: 20%;
+  transition: transform 0.2s;
+}
+.menu-nav .dragons:hover {
+  transform: scale(1.05);
+}
+.menu-nav .link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/********************************************************************
+    ************************ SECTION CONTAINER **************************
+    ********************************************************************/
+
+.container {
+  background-color: rgba(217, 217, 217, 0.8);
+  width: 70%;
+  margin-left: 20%;
+  height: auto;
+  position: relative;
+  padding-bottom: 2em;
+}
+.dragon-picture {
+  width: 70%;
+}
+.badge-feu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+
+.description {
+  width: 80%;
+  margin: auto;
+}
+.description img {
+  width: 15%;
+}
+.power,
+.armure {
+  display: flex;
+}
+
+/********************************************************************
+  ************************ RESPONSIVE TABLETTE **************************
+  ********************************************************************/
+@media screen and (max-width: 1065px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  .menu-nav {
+    position: fixed;
+    left: 0px;
+    top: 140px;
+    width: 20%;
+  }
+  .menu-nav ul li a,
+  .menu-nav ul li a h2 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 915px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  header {
+    width: 100%;
+    border-radius: 0;
+  }
+  .menu-nav {
+    display: none;
+  }
+  .hidden {
+    display: flex;
+    width: 100%;
+    background-color: #898989;
+  }
+  .hidden ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .hidden ul li {
+    list-style: none;
+  }
+  .hidden ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+}
+/********************************************************************
+  ************************ RESPONSIVE MOBILE **************************
+  ********************************************************************/
+@media screen and (max-width: 500px) {
+  .hidden {
+    font-size: 1em;
+  }
+}
