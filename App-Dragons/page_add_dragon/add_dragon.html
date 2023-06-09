@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_add.css" />
+    <script
+      src="https://kit.fontawesome.com/03938f57a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Créer ton dragon</title>
+  </head>
+  <body>
+    <header>
+      <img src="../img_dragons/dragon-eye-3235673_640.png" alt="Logo dragon" />
+      <h1>Créer ton dragon</h1>
+      <img src="../img_dragons/dragon-eye-3235673_640.png" alt="Logo dragon" />
+    </header>
+    <main>
+      <nav class="hidden">
+        <ul>
+          <li>
+            <a href="../index.html" aria-label="Voir tous les dragons"
+              >Tous les dragons</a
+            >
+          </li>
+          <li>
+            <a href="add_dragon.html" aria-label="Ajouter un dragon"
+              >Ajouter un dragon</a
+            >
+          </li>
+          <li><a href="#" aria-label="Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="menu-nav">
+        <ul>
+          <li class="all-dragons dragons">
+            <a href="../index.html" aria-label="Voir tous les dragons">
+              <img src="../img_dragons/dragon-All.png" alt="Image de dragon" />
+              <div class="link">
+                <h2>Tous les dragons</h2>
+                <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
+              </div>
+            </a>
+          </li>
+          <li class="add-dragons dragons">
+            <a href="add_dragon.html" aria-label="Ajouter un dragon">
+              <img src="../img_dragons/dragons-add.jpg" alt="Image de dragon" />
+              <div class="link">
+                <h2>Ajouter un dragon</h2>
+                <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
+              </div>
+            </a>
+          </li>
+          <li class="contact dragons">
+            <a href="#" aria-label="Nous contacter">
+              <img
+                src="../img_dragons/dragons-contact.jpg"
+                alt="Image de dragon"
+              />
+              <div class="link">
+                <h2>Contact</h2>
+                <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="container">
+        <form action="traitement_formulaire.php" method="POST">
+          <div class="user-form">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required />
+          </div>
+          <div class="user-form">
+            <label for="puissance"
+              >Sélectionne son niveau de puissance allant de 1 à 5 étoiles
+              :</label
+            >
+            <input
+              type="number"
+              id="puissance"
+              name="puissance"
+              min="1"
+              max="5"
+              required
+            />
+          </div>
+          <div class="user-form">
+            <label for="armure"
+              >Sélectionne son niveau d'armure allant de 1 à 5 étoiles :</label
+            >
+            <input
+              type="number"
+              id="armure"
+              name="armure"
+              min="1"
+              max="5"
+              required
+            />
+          </div>
+          <div class="user-form">
+            <label for="type">Type :</label>
+            <select id="type" name="type" required>
+              <option value="">Sélectionner un type</option>
+              <option value="Eau" aria-label="Eau">Eau</option>
+              <option value="Feu" aria-label="Feu">Feu</option>
+              <option value="Terre" aria-label="Terre">Terre</option>
+              <option value="Air" aria-label="Air">Air</option>
+            </select>
+          </div>
+          <div class="type">
+            <img src="../img_dragons/logo-eau.png" alt="logo eau " />
+            <img src="../img_dragons/logo-feu.png" alt="logo feu" />
+            <img src="../img_dragons/logo-terre.png" alt="logo terre" />
+            <img src="../img_dragons/logo-tornade.png" alt="logo air" />
+          </div>
+          <div class="user-form">
+            <label for="image">Sélectionne sa photo :</label>
+            <input
+              type="file"
+              id="image"
+              name="image"
+              accept="image/*"
+              required
+            />
+          </div>
+          <div class="user-form">
+            <input type="submit" value="Soumettre" />
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

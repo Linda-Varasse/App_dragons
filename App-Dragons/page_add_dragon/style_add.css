@@ -4,8 +4,8 @@
 
 body {
   width: 100%;
-  background-image: url("../../img_dragons/background-dragon.jpg");
-  background-size: contain;
+  background-image: url("../img_dragons/background-add.jpg");
+  background-size: cover;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -15,8 +15,8 @@ h1 {
   text-shadow: 11px 5px 8px #898989;
 }
 /********************************************************************
-    ************************ HEADER ***********************************
-    ********************************************************************/
+  ************************ HEADER ***********************************
+  ********************************************************************/
 header {
   display: flex;
   justify-content: space-around;
@@ -30,8 +30,8 @@ header img {
   width: 10%;
 }
 /********************************************************************
-    ************************ NAV ****************************************
-    ********************************************************************/
+  ************************ NAV ****************************************
+  ********************************************************************/
 .hidden {
   display: none;
 }
@@ -74,39 +74,35 @@ header img {
 }
 
 /********************************************************************
-    ************************ SECTION CONTAINER **************************
-    ********************************************************************/
+  ************************ SECTION CONTAINER **************************
+  ********************************************************************/
 
 .container {
   background-color: rgba(217, 217, 217, 0.8);
   width: 70%;
   margin-left: 20%;
-  height: auto;
-  position: relative;
+  height: 500px;
   padding-bottom: 2em;
 }
-.dragon-picture {
-  width: 70%;
+.container form {
+  margin-left: 2em;
+  padding: 4em;
 }
-.badge-terre {
-  position: absolute;
-  top: 0;
-  right: 0;
+form .user-form {
+  margin: 2em;
+}
+.form input {
+  padding: 0.5em;
+}
+.type {
+  display: flex;
+  align-items: center;
   width: 50%;
 }
-
-.description {
-  width: 80%;
-  margin: auto;
+.type img {
+  width: 20%;
+  height: auto;
 }
-.description img {
-  width: 15%;
-}
-.power,
-.armure {
-  display: flex;
-}
-
 /********************************************************************
   ************************ RESPONSIVE TABLETTE **************************
   ********************************************************************/

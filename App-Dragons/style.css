@@ -103,7 +103,7 @@ header img {
   width: 40%;
   margin: 2em 0 2em 4em;
 }
-.dragons-description .dragon-presentation img {
+.dragons-description .dragon-presentation .name-dragon img {
   width: 50%;
 }
 .name-dragon {
@@ -120,6 +120,7 @@ header img {
   color: #fff;
   text-decoration: none;
 }
+
 /********************************************************************
 ************************ NAV PAGE **************************
 ********************************************************************/
