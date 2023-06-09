@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/03938f57a2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Dragons</title>
+  </head>
+  <body>
+    <header>
+      <img src="img_dragons/dragon-eye-3235673_640.png" alt="Logo dragon" />
+      <h1>Dragons</h1>
+      <img src="img_dragons/dragon-eye-3235673_640.png" alt="Logo dragon" />
+    </header>
+    <main>
+      <nav class="hidden">
+        <ul>
+          <li>
+            <a href="#" aria-label="Voir tous les dragons">Tous les dragons</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Ajouter un dragon">Ajouter un dragon</a>
+          </li>
+          <li><a href="#" aria-label="Contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="menu-nav">
+        <ul>
+          <li class="all-dragons dragons">
+            <a href="#" aria-label="Voir tous les dragons">
+              <img src="img_dragons/dragon-All.png" alt="Image de dragon" />
+              <div class="link">
+                <h2>Tous les dragons</h2>
+                <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
+              </div>
+            </a>
+          </li>
+          <li class="add-dragons dragons">
+            <a href="#" aria-label="Ajouter un dragon">
+              <img src="img_dragons/dragons-add.jpg" alt="Image de dragon" />
+              <div class="link">
+                <h2>Ajouter un dragon</h2>
+                <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
+              </div>
+            </a>
+          </li>
+          <li class="contact dragons">
+            <a href="#" aria-label="Nous contacter">
+              <img
+                src="img_dragons/dragons-contact.jpg"
+                alt="Image de dragon"
+              />
+              <div class="link">
+                <h2>Contact</h2>
+                <i class="fa-solid fa-arrow-right" style="color: #ffffff"></i>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <section class="container">
+        <article>
+          <h2>Trier par :</h2>
+          <div class="select-menu">
+            <div class="type-choice">
+              <label for="type">Type</label>
+              <select name="type" id="type">
+                <datalist id="power">
+                  <option value="Air" aria-label="Air">Air</option>
+                  <option value="Feu" aria-label="Feu">Feu</option>
+                  <option value="Terre" aria-label="Terre">Terre</option>
+                  <option value="Eau" aria-label="Eau">Eau</option>
+                </datalist>
+              </select>
+            </div>
+            <div class="name-choice">
+              <label for="name">Nom:</label>
+              <input type="search" name="search" id="name" />
+            </div>
+            <div class="checkbox">
+              <input type="checkbox" id="power" name="power" />
+              <label for="power">Puissance</label>
+            </div>
+          </div>
+        </article>
+        <section class="dragons-description">
+          <article class="dragon-drosera dragon-presentation">
+            <div class="name-dragon">
+              <img src="img_dragons/droséra.png" alt="Dragon rouge Droséra" />
+              <h3>Droséra</h3>
+            </div>
+            <button>
+              <a
+                href="page_Relations/relations.html"
+                aria-label="Voir les relations de Droséra"
+                >Voir les relations</a
+              >
+            </button>
+          </article>
+          <article class="dragon-samug dragon-presentation">
+            <div class="name-dragon">
+              <img src="img_dragons/smaug.png" alt="Dragon gris Smaug" />
+              <h3>Smaug</h3>
+            </div>
+            <button>
+              <a href="#" aria-label="Voir les relations de Smaug"
+                >Voir les relations</a
+              >
+            </button>
+          </article>
+          <article class="dragon-saphira dragon-presentation">
+            <div class="name-dragon">
+              <img src="img_dragons/saphira.png" alt="Dragon noir Saphira" />
+              <h3>Saphira</h3>
+            </div>
+            <button>
+              <a href="#" aria-label="Voir les relations de Saphira"
+                >Voir les relations</a
+              >
+            </button>
+          </article>
+          <article class="dragon-falkor dragon-presentation">
+            <div class="name-dragon">
+              <img src="img_dragons/Falkor.png" alt="Dragon rouge Falkor" />
+              <h3>Falkor</h3>
+            </div>
+            <button>
+              <a href="#" aria-label="Voir les relations de Falkor"
+                >Voir les relations</a
+              >
+            </button>
+          </article>
+        </section>
+        <section>
+          <nav class="pages" aria-label="pagination">
+            <ul class="pagination">
+              <li>
+                <a href="#" aria-label="page précédente"
+                  ><span aria-hidden="true">« </span></a
+                >
+              </li>
+              <li>
+                <a href="#" aria-label="page 1">1 </a>
+              </li>
+              <li>
+                <a href="#" aria-label="page 1">2 </a>
+              </li>
+              <li>
+                <a href="#" aria-label="page 1">3 </a>
+              </li>
+              <li>
+                <a href="#" aria-label="page 1">4 </a>
+              </li>
+              <li>
+                <a href="#" aria-label="page suivante"
+                  ><span aria-hidden="true">»</span></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
