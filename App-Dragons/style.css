@@ -1,0 +1,140 @@
+/********************************************************************
+************************ GENERAL ***********************************
+********************************************************************/
+
+body {
+  width: 100%;
+  background-image: url("img_dragons/background-home.jpg");
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+h1 {
+  font-size: 3.75em;
+  text-shadow: 11px 5px 8px #898989;
+}
+/********************************************************************
+************************ HEADER ***********************************
+********************************************************************/
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(16, 27, 64, 0.95);
+  border-radius: 20px;
+  width: 80%;
+  margin: auto;
+  color: #fff;
+}
+header img {
+  width: 10%;
+}
+/********************************************************************
+************************ NAV ****************************************
+********************************************************************/
+.menu-nav {
+  position: fixed;
+  left: 0px;
+  top: 140px;
+  width: 20%;
+}
+.menu-nav ul {
+  padding: 0;
+}
+.menu-nav ul li {
+  list-style: none;
+}
+.menu-nav ul li a,
+.menu-nav ul li a h2 {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.menu-nav img {
+  width: 100%;
+}
+.menu-nav .dragons {
+  background-color: #898989;
+  padding: 0 0 1em 0;
+  width: 80%;
+  margin: 1em 0 0.5em 0;
+  height: 20%;
+  transition: transform 0.2s;
+}
+.menu-nav .dragons:hover {
+  transform: scale(1.05);
+}
+.menu-nav .link {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/********************************************************************
+************************ CHOIX ****************************************
+********************************************************************/
+.container h2 {
+  padding: 1em;
+}
+.select-menu {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+}
+/********************************************************************
+************************ SECTION CONTAINER **************************
+********************************************************************/
+
+.container {
+  background-color: rgba(217, 217, 217, 0.8);
+  width: 65%;
+  height: 800px;
+  margin: auto;
+}
+.dragons-description {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.dragons-description .dragon-presentation {
+  width: 40%;
+  margin: 2em 0 2em 4em;
+}
+.dragons-description .dragon-presentation img {
+  width: 50%;
+}
+.name-dragon {
+  display: flex;
+  margin-bottom: 2em;
+}
+.dragons-description button {
+  padding: 1em;
+  border: 0;
+  border-radius: 20px;
+  background-color: #101b40;
+}
+.dragons-description button a {
+  color: #fff;
+  text-decoration: none;
+}
+/********************************************************************
+************************ NAV PAGE **************************
+********************************************************************/
+.pages {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.pagination li {
+  margin: 0 1px;
+}
+.pagination li a {
+  color: black;
+  padding: 0 1em;
+}
